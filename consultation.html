@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Consultation | Voltgenics</title>
+    <meta name="description"
+        content="Discuss electrical products, cable termination, testing, commissioning and project requirements with Voltgenics.">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .consultation-intro {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 30px 55px;
+        }
+
+        .consultation-intro h1 {
+            max-width: 15ch;
+            margin-bottom: 20px;
+            color: var(--white);
+            font-size: clamp(2.8rem, 6vw, 5rem);
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -0.04em;
+        }
+
+        .consultation-intro > p:last-child {
+            max-width: 680px;
+            color: var(--siberia);
+            font-size: 1.1rem;
+        }
+
+        .consultation-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 45px 30px;
+        }
+
+        .consultation-section-heading {
+            max-width: 700px;
+            margin-bottom: 32px;
+        }
+
+        .consultation-section-heading h2 {
+            margin-bottom: 14px;
+            color: var(--white);
+            font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.03em;
+            white-space: nowrap;
+        }
+
+        .consultation-section-heading > p:last-child {
+            color: var(--siberia);
+            font-size: 1.05rem;
+        }
+
+        .consultation-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+        .consultation-card {
+            padding: 32px;
+            border: 1px solid rgba(148, 157, 169, 0.18);
+            border-radius: 22px;
+            background: var(--retro-blue);
+        }
+
+        .consultation-card .eyebrow {
+            margin-bottom: 12px;
+        }
+
+        .consultation-card h3 {
+            margin-bottom: 14px;
+            color: var(--white);
+            font-size: 1.4rem;
+            line-height: 1.3;
+            white-space: nowrap;
+        }
+
+        .consultation-card p {
+            margin-bottom: 18px;
+            color: var(--siberia);
+        }
+
+        .consultation-card ul {
+            display: grid;
+            gap: 10px;
+            padding-left: 20px;
+            color: var(--white);
+        }
+
+        .consultation-card li::marker {
+            color: var(--spring-sky);
+        }
+
+        .consultation-steps {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+            counter-reset: consultation-step;
+        }
+
+        .consultation-step {
+            counter-increment: consultation-step;
+            padding: 26px;
+            border-top: 2px solid var(--spring-sky);
+            background: rgba(41, 74, 109, 0.55);
+        }
+
+        .consultation-step::before {
+            content: "0" counter(consultation-step);
+            display: block;
+            margin-bottom: 18px;
+            color: var(--spring-sky);
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+        }
+
+        .consultation-step h3 {
+            margin-bottom: 10px;
+            color: var(--white);
+            font-size: 1.15rem;
+        }
+
+        .consultation-step p {
+            color: var(--siberia);
+        }
+
+        .scope-note {
+            margin-top: 28px;
+            padding: 22px 24px;
+            border-left: 3px solid var(--spring-sky);
+            background: rgba(41, 74, 109, 0.5);
+            color: var(--siberia);
+        }
+
+        .scope-note strong {
+            color: var(--white);
+        }
+
+        @media (max-width: 900px) {
+            .consultation-intro {
+                padding: 65px 20px 40px;
+            }
+
+            .consultation-section {
+                padding: 35px 20px;
+            }
+
+            .consultation-steps {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .consultation-intro {
+                padding-top: 50px;
+            }
+
+            .consultation-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .consultation-card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="index.html" class="logo">
+                VOLTGENICS
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html#about">About</a>
+                <a href="services.html">Engineering Services</a>
+                <a href="trading.html#Trading">Trading</a>
+                <a href="consultation.html#Consultation">Consultation</a>
+                <a href="contact.html#contact">Contact</a>
+            </div>
+
+            <a href="#contact" class="nav-button">Discuss a Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="consultation-intro">
+            <p class="eyebrow">CONSULTATION &amp; PROJECT SUPPORT</p>
+            <h1>Practical guidance for electrical projects.</h1>
+            <p>
+                Whether you are sourcing electrical products or planning
+                specialist site work, we can discuss your requirements and
+                help identify the practical next steps.
+            </p>
+        </section>
+
+        <section class="consultation-section" aria-labelledby="who-we-support">
+            <div class="consultation-section-heading">
+                <p class="eyebrow">WHO WE SUPPORT</p>
+                <h2 id="who-we-support">Support shaped around your needs.</h2>
+                <p>
+                    We work with product buyers and project teams. We will help you find the right
+                    support depending on your specific needs and plans.
+                </p>
+            </div>
+
+            <div class="consultation-grid">
+                <article class="consultation-card">
+                    <p class="eyebrow">PRODUCTS · B2B &amp; B2C</p>
+                    <h3>Help finding the right electrical products.</h3>
+                    <p>
+                        If you know what you need—or are still comparing
+                        options—we can discuss product availability, items
+                        held in our warehouse, and sourcing options.
+                    </p>
+                    <ul>
+                        <li>Discuss product specifications and quantities</li>
+                        <li>Check whether requested items are available from our stock</li>
+                        <li>Explore sourcing options for products we do not currently hold</li>
+                    </ul>
+                </article>
+
+                <article class="consultation-card">
+                    <p class="eyebrow">ELECTRICAL PROJECTS</p>
+                    <h3>Discussing specialist electrical work.</h3>
+                    <p>
+                        For project teams planning work at electrical
+                        stations or other facilities, we can discuss the
+                        requirements for services such as:
+                    </p>
+                    <ul>
+                        <li>Cable termination</li>
+                        <li>Electrical testing</li>
+                        <li>Commissioning support</li>
+                        <li>Project-specific consultation</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="consultation-section" aria-labelledby="consultation-topics">
+            <div class="consultation-section-heading">
+                <p class="eyebrow">TYPICAL DISCUSSION AREAS</p>
+                <h2 id="consultation-topics">Start with the project requirements.</h2>
+                <p>
+                    Engineering consultation can help clarify the need,
+                    review available information and agree what support
+                    should be considered next.
+                </p>
+            </div>
+
+            <div class="consultation-steps">
+                <article class="consultation-step">
+                    <h3>Understand the requirement</h3>
+                    <p>
+                        Discuss the application, location, intended outcome,
+                        schedule and any known technical constraints.
+                    </p>
+                </article>
+
+                <article class="consultation-step">
+                    <h3>Review the information</h3>
+                    <p>
+                        Consider the specifications, drawings, product
+                        details or site requirements you can share.
+                    </p>
+                </article>
+
+                <article class="consultation-step">
+                    <h3>Agree a way forward</h3>
+                    <p>
+                        Identify whether the next step is product sourcing,
+                        a service discussion, or a more detailed project
+                        scope.
+                    </p>
+                </article>
+            </div>
+
+        </section>
+
+        <section class="contact" id="contact">
+            <p class="eyebrow">LET'S DISCUSS YOUR REQUIREMENTS</p>
+            <h2>Tell us what your project needs.</h2>
+            <p>
+                Share the products or electrical services you are looking
+                for, along with any relevant specifications or project
+                details. We can discuss the next step with you.
+            </p>
+            <a href="mailto:info@voltgenics.com" class="button-primary">
+                Contact Voltgenics
+            </a>
+        </section>
+    </main>
+
+    <footer>
+    <p>© 2026 Voltgenics. All rights reserved.</p>
+
+    <nav class="footer-legal" aria-label="Legal information">
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="agb.html">AGB</a>
+        <a href="impressum.html">Impressum</a>
+        <button type="button" id="open-cookie-settings">
+            Cookie-Einstellungen
+        </button>
+    </nav>
+</footer>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products | Voltgenics</title>
+    <meta name="description"
+        content="Browse Voltgenics electrical, cable, safety, heating and process instrumentation product ranges.">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .products-intro {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 30px 50px;
+        }
+
+        .products-intro h1 {
+            max-width: 14ch;
+            margin-bottom: 18px;
+            color: var(--white);
+            font-size: clamp(2.8rem, 6vw, 5rem);
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -0.04em;
+        }
+
+        .products-intro > p:last-child {
+            max-width: 650px;
+            color: var(--siberia);
+            font-size: 1.1rem;
+        }
+
+        .product-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 35px 30px 65px;
+        }
+
+        .product-section-heading {
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            gap: 24px;
+            margin-bottom: 28px;
+            padding-bottom: 18px;
+            border-bottom: 1px solid rgba(148, 157, 169, 0.22);
+        }
+
+        .product-section-heading h2 {
+            color: var(--white);
+            font-size: clamp(1.6rem, 3vw, 2.3rem);
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .product-section-heading p {
+            color: var(--siberia);
+            font-size: 0.95rem;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .product-link {
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 18px;
+            padding: 22px 24px;
+            border: 1px solid rgba(148, 157, 169, 0.18);
+            border-radius: 16px;
+            background: var(--retro-blue);
+            color: var(--white);
+            font-size: 0.98rem;
+            font-weight: 700;
+            line-height: 1.4;
+            transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+        }
+
+        .product-link::after {
+            content: "↗";
+            flex: 0 0 auto;
+            color: var(--spring-sky);
+            font-size: 1.2rem;
+            transition: transform 0.2s ease;
+        }
+
+        .product-link:hover {
+            transform: translateY(-3px);
+            border-color: var(--spring-sky);
+            background: #355b81;
+        }
+
+        .product-link:hover::after {
+            transform: translate(2px, -2px);
+        }
+
+        .product-link:focus-visible {
+            outline: 3px solid var(--spring-sky);
+            outline-offset: 3px;
+        }
+
+        @media (max-width: 900px) {
+            .products-intro {
+                padding: 65px 20px 35px;
+            }
+
+            .product-section {
+                padding: 30px 20px 50px;
+            }
+
+            .product-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 600px) {
+            .products-intro {
+                padding-top: 50px;
+            }
+
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .product-link {
+                min-height: 82px;
+                padding: 19px 20px;
+            }
+
+            .product-section-heading {
+                align-items: start;
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="index.html" class="logo" aria-label="Voltgenics home">
+                VOLTGENICS
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html#about">About</a>
+                <a href="services.html">Engineering Services</a>
+                <a href="trading.html#Trading">Trading</a>
+                <a href="consultation.html#Consultation">Consultation</a>
+                <a href="contact.html#contact">Contact</a>
+            </div>
+
+            <a href="index.html#contact" class="nav-button">Get a Quote</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products-intro">
+            <p class="eyebrow">VOLTGENICS TRADING</p>
+            <h1>Our Products</h1>
+            <p>
+                Explore our electrical, cable, safety, heating and process
+                products. Select a product area to find out more.
+            </p>
+        </section>
+
+        <section class="product-section" aria-labelledby="electrical-products">
+            <div class="product-section-heading">
+                <h2 id="electrical-products">Electrical &amp; Cable Products</h2>
+                <p>Products for electrical installation, protection and infrastructure.</p>
+            </div>
+
+            <div class="product-grid">
+                <a class="product-link" href="https://www.powerandcables.com/product/arc-flash-clothing-protection/">Arc Flash Clothing, PPE &amp; Flash Protection Kits</a>
+                <a class="product-link" href="https://www.powerandcables.com/product/cable-cleats/">Cable Cleats, Clamps &amp; Hangers</a>
+                <a class="product-link" href="https://www.powerandcables.com/product/cable-crimps-lugs-connectors/">Cable Crimps, Lugs &amp; Connectors</a>
+                <a class="product-link" href="https://www.powerandcables.com/product/cable-cutting-crimping-tools/">Cable Cutting &amp; Crimping Tools</a>
+                <a class="product-link" href="https://www.powerandcables.com/product/cable-duct/">Cable Duct</a>
+                <a class="product-link" href="https://www.powerandcables.com/product/cable-glands/">Cable Glands</a>
+                <a class="product-link" href="https://www.powerandcables.com/product/cable-jointing-tools/">Cable Jointing Tools</a>
+                <a class="product-link" href="https://www.powerandcables.com/product/cable-labels/">Cable Labels</a>
+                <a class="product-link" href="https://www.powerandcables.com/product/cable-protection/">Cable Protection</a>
+                <a class="product-link" href="https://www.powerandcables.com/product/cable-pulling-laying/">Cable Pulling &amp; Cable Laying</a>
+                <a class="product-link" href="https://www.powerandcables.com/product/cable-transits/">Cable Transits</a>
+                <a class="product-link" href="https://www.powerandcables.com/product/cable-trough/">Cable Trough</a>
+                <a class="product-link" href="https://www.powerandcables.com/product/offshore-cables/">Cables</a>
+                <a class="product-link" href="https://www.powerandcables.com/product/cold-shrink/">Cold Shrink</a>
+                <a class="product-link" href="https://www.powerandcables.com/product/cut-outs-isolators/">Cut Outs &amp; Isolators</a>
+                <a class="product-link" href="https://www.powerandcables.com/product/duct-seals/">Duct Seals &amp; Sealing</a>
+                <a class="product-link" href="https://www.powerandcables.com/product/earthing-lightning-protection/">Earthing &amp; Lightning Protection</a>
+                <a class="product-link" href="https://www.powerandcables.com/product/electrical-safety/">Electrical Safety</a>
+                <a class="product-link" href="https://www.powerandcables.com/product/feeder-pillars/">Feeder Pillars</a>
+                <a class="product-link" href="https://www.powerandcables.com/product/fuses-hv-mv-11kv-33kv/">Fuses — MV &amp; HV, 11kV–33kV</a>
+                <a class="product-link" href="https://www.powerandcables.com/product/hazardous-area/">Hazardous Area Cable Glands, Cleats &amp; Joints</a>
+                <a class="product-link" href="https://www.powerandcables.com/product/hv-cable-joints-terminations-connectors/">HV Cable Joints, Terminations &amp; Connectors</a>
+                <a class="product-link" href="https://www.powerandcables.com/product/lv-cable-joints/">LV Cable Joints — Cold Shrink, Heat Shrink &amp; Resin</a>
+                <a class="product-link" href="https://www.powerandcables.com/product/11kv-33kv-mv-hv-cables/">Medium &amp; High Voltage Cables, 11kV–33kV</a>
+                <a class="product-link" href="https://www.powerandcables.com/product/surge-arresters-mv-hv-11kv-33kv/">Surge Arresters — MV &amp; HV, 11kV–33kV</a>
+            </div>
+        </section>
+
+        <section class="product-section" aria-labelledby="heating-process-products">
+            <div class="product-section-heading">
+                <h2 id="heating-process-products">Heating, Process &amp; Building Products</h2>
+                <p>Equipment and systems for process, building and specialist applications.</p>
+            </div>
+
+            <div class="product-grid">
+                <a class="product-link" href="https://www.heatingandprocess.com/product/mechanical/">Mechanical</a>
+                <a class="product-link" href="https://www.heatingandprocess.com/product/process-instrumentation/">Process Instrumentation</a>
+                <a class="product-link" href="https://www.heatingandprocess.com/product/light-power/">Light and Power</a>
+                <a class="product-link" href="https://www.heatingandprocess.com/product/metering/">Metering</a>
+                <a class="product-link" href="https://www.heatingandprocess.com/product/gas-detection/">Gas Detection</a>
+                <a class="product-link" href="https://www.heatingandprocess.com/product/trace-heating/">Trace Heating</a>
+                <a class="product-link" href="https://www.heatingandprocess.com/product/ibc-heating/">IBC Heating</a>
+                <a class="product-link" href="https://www.heatingandprocess.com/product/silicone-heaters/">Silicone Heaters</a>
+                <a class="product-link" href="https://www.heatingandprocess.com/product/hvac-breeam-leak-detection-valves-wras/">HVAC</a>
+                <a class="product-link" href="https://www.heatingandprocess.com/product/mobile-communications/">Mobile Communications</a>
+                <a class="product-link" href="https://www.heatingandprocess.com/product/hazardous-area-products/">Hazardous Area Products</a>
+            </div>
+        </section>
+
+        <section class="contact">
+            <p class="eyebrow">NEED PRODUCT ADVICE?</p>
+            <h2>Talk to the Voltgenics team.</h2>
+            <p>
+                Contact us to discuss product availability and the requirements
+                of your project.
+            </p>
+            <a href="index.html#contact" class="button-primary">Contact Us</a>
+        </section>
+    </main>
+
+<footer>
+    <p>© 2026 Voltgenics. All rights reserved.</p>
+
+    <nav class="footer-legal" aria-label="Legal information">
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="agb.html">AGB</a>
+        <a href="impressum.html">Impressum</a>
+        <button type="button" id="open-cookie-settings">
+            Cookie-Einstellungen
+        </button>
+    </nav>
+</footer>
+</body>
+</html>
